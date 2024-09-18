@@ -423,7 +423,13 @@ static MimeViewer *image_viewer_create(void)
 }
 
 static gchar *content_types[] =
-	{"image/*", NULL};
+	{"image/png",
+	 "image/jpeg",
+	 "image/gif",
+	 "image/bmp",
+	 "image/webp",
+	 "image/svg+xml",
+	  NULL};
 
 MimeViewerFactory image_viewer_factory =
 {

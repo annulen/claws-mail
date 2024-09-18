@@ -129,11 +129,13 @@ struct _PdfViewer
 static gchar *content_types[] =
 	{"application/pdf", 
 	 "application/postscript", 
+	 "image/x-eps",
 	 NULL};
 typedef enum {
 	TYPE_UNKNOWN,
 	TYPE_PDF,
-	TYPE_PS
+	TYPE_PS,
+	TYPE_EPS
 } FileType;
 
 enum {
