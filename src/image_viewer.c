@@ -96,7 +96,7 @@ static void image_viewer_load_image(ImageViewer *imageviewer)
 	g_object_unref(stream);
 
 	if (error) {
-		g_warning("couldn't load image: %s", error->message);
+		g_warning("~~2 couldn't load image: %s", error->message);
 		gtk_label_set_text(GTK_LABEL(imageviewer->error_lbl), _("Error:"));
 		gtk_label_set_text(GTK_LABEL(imageviewer->error_msg), error->message);
 		gtk_notebook_set_current_page(GTK_NOTEBOOK(imageviewer->notebook), 0);
@@ -128,7 +128,7 @@ static void image_viewer_load_image(ImageViewer *imageviewer)
 	}
 
 	if (!pixbuf && !animation) {
-		g_warning("couldn't load the image");	
+		g_warning("!!~ couldn't load the image");	
 		return;
 	}
 

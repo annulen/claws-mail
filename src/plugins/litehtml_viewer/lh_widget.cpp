@@ -451,7 +451,7 @@ GdkPixbuf *lh_widget::get_local_image(const litehtml::string url) const
 
 			pixbuf = procmime_get_part_as_pixbuf(p, &error);
 			if (error != NULL) {
-				g_warning("couldn't load image: %s", error->message);
+				g_warning("~~3 couldn't load image: %s", error->message);
 				g_error_free(error);
 				return NULL;
 			}

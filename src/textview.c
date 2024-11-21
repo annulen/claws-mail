@@ -730,7 +730,7 @@ static void textview_add_part(TextView *textview, MimeInfo *mimeinfo)
 
 			pixbuf = procmime_get_part_as_pixbuf(mimeinfo, &error);
 			if (error != NULL) {
-				g_warning("can't load the image: %s", error->message);
+				g_warning("~~1 can't load the image: %s", error->message);
 				g_error_free(error);
 				END_TIMING();
 				return;
